@@ -1,0 +1,17 @@
+{
+  "name": "ig-furniture",
+  "version": "0.0.6",
+  "description": "Furniture components for FT Interactive Graphics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ft-interactive/ig-furniture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ft-interactive/ig-furniture/issues"
+  },
+  "homepage": "https://github.com/ft-interactive/ig-furniture"
+}
