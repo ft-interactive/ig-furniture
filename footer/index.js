@@ -51,7 +51,7 @@ Footer.prototype.template = function () {
     );
   }
   
-  if (this.footnotes.length) {
+  if (this.footnotes && this.footnotes.length) {
     footnotesDom = '<div class="ig-footer__footnotes">' + this.footnotes.map(function(footnote) {
       return '<p>' + footnote + '</p>';
     }).join('') + '</div>';
