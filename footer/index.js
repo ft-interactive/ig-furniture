@@ -46,11 +46,13 @@ Footer.prototype.template = function () {
   if (this.credits && this.credits.length) {
     dom += (
       '<span class="ig-footer__credits">' +
-      printList(this.strings.graphicType + ' by ', this.credits) +
-      '</span>'
+      printList(
+        (this.strings.graphicType ? this.strings.graphicType + ' by ' : 'By '),
+        this.credits
+      ) + '</span>'
     );
   }
-  
+
   if (this.footnotes && this.footnotes.length) {
     footnotesDom = '<div class="ig-footer__footnotes">' + this.footnotes.map(function(footnote) {
       return '<p>' + footnote + '</p>';
